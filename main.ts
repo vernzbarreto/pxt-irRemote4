@@ -75,7 +75,7 @@ enum RemoteButton {
    };
 
 //% color="#EE6A50" weight=10 icon="\uf013"
-namespace remote {
+namespace Remote {
     /**
      * button pushed.
      */
