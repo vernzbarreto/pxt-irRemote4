@@ -139,7 +139,7 @@ export function IR_callbackUserV2(cb: (message: string) => void) {
 
 function valuotokeyConversion(): string {
     // let irdata: number;
-	let str;
+	let str: string;
     // basic.showString("" + (irCode()))
     switch (irCode()) {
         case 0xba45: str = 'A'; break;
