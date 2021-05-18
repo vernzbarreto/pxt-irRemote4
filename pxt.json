@@ -1,5 +1,5 @@
 {
-    "name": "magicbit",
+    "name": "IRremote",
     "version": "1.0.0",
     "description": "ir remote",
     "license": "MIT",
@@ -17,7 +17,7 @@
         "RemoteIR.h",
         "TransmitterIR.cpp",
         "TransmitterIR.h",
-        "_locales/zh/magicbit-strings.json",
+        "_locales/zh/remote-strings.json",
         "NecIR.cpp"
     ],
     "testFiles": [

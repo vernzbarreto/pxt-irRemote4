@@ -75,7 +75,7 @@ enum RemoteButton {
    };
 
 //% color="#EE6A50" weight=10 icon="\uf013"
-namespace magicbit {
+namespace remote {
     /**
      * button pushed.
      */
@@ -163,7 +163,7 @@ function valuotokeyConversion(): string {
         case 0xbd42: str = '7'; break;
         case 0xad52: str = '8'; break;
         case 0xb54a: str = '9'; break;
-        
+        default: str = ''; break;
     }
     return str;
 }
