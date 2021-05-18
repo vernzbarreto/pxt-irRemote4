@@ -1,11 +1,10 @@
 {
     "name": "magicbit",
     "version": "1.0.0",
-    "description": "Emakefun magicbit expansion board",
+    "description": "ir remote",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "Sensorbit": "github:emakefun/pxt-sensorbit"
+        "core": "*"
     },
     "files": [
         "README.md",

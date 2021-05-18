@@ -6,6 +6,51 @@ load dependency
 */
 
 
+enum RemoteButton {
+    //% block=A
+    A = 0x45,
+    //% block=B
+    B = 0x46,
+    //% block=C
+    C = 0x47,
+    //% block=D
+    D = 0x44,
+    //% block=UP
+    UP = 0x40,
+    //% block=+
+    Add = 0x43,
+    //% block=LEFT
+    Left = 0x07,
+    //% block=OK
+    Ok = 0x15,
+    //% block=RIGHT
+    Right = 0x09,
+    //% block=DOWN
+    Down = 0x19,
+    //% block=-
+    EQ = 0x0d,
+    //% block=0
+    NUM0 = 0x16,
+    //% block=1
+    NUM1 = 0x0c,
+    //% block=2
+    NUM2 = 0x18,
+    //% block=3
+    NUM3 = 0x5e,
+    //% block=4
+    NUM4 = 0x8,
+    //% block=5
+    NUM5 = 0x1c,
+    //% block=6
+    NUM6 = 0x5a,
+    //% block=7
+    NUM7 = 0x42,
+    //% block=8
+    NUM8 = 0x52,
+    //% block=9
+    NUM9 = 0x4A
+};
+
 //% color="#EE6A50" weight=10 icon="\uf013"
 namespace magicbit {
     /**
@@ -18,7 +63,7 @@ namespace magicbit {
     }
 
     /**
-     * initialises local variablesssss
+     * initialises local variables
      *  @param pin describe parameter here, eg: IrPins.P5  
      */
     //% blockId=IrRemote_init 
@@ -96,9 +141,9 @@ function valuotokeyConversion(): string {
         case 0xad52: str = '8'; break;
         case 0xb54a: str = '9'; break;
         default:
-            irdata = -1;
+            str = -1;
     }
-    return irdata;
+    return str;
 }
 
 basic.forever(() => {
