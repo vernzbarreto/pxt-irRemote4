@@ -1,6 +1,6 @@
 {
-    "remote.IrRemote_init|block": "红外遥控器初始化引脚|%pin",
-    "remote.OnPressEvent|block": "当红外遥控器按键|%btn|按下",
-    "remote.IR_callbackUserV2|block": "当接收到红外时运行",
-    "remote.IR_readV2|block": "红外接收的值"
+    "IRremote.IrRemote_init|block": "红外遥控器初始化引脚|%pin",
+    "IRremote.OnPressEvent|block": "当红外遥控器按键|%btn|按下",
+    "IRremote.IR_callbackUserV2|block": "当接收到红外时运行",
+    "IRremote.IR_readV2|block": "红外接收的值"
 }
