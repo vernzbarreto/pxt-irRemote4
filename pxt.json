@@ -8,7 +8,7 @@
     },
     "files": [
         "README.md",
-        "main.ts",
+        "Remote.ts",
         "shims.d.ts",
         "enums.d.ts",
         "ir.cpp",
