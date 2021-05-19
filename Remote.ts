@@ -72,7 +72,7 @@ namespace Remote {
      * button pushed.
      */
     //% blockId=onPressEvent
-    //% block="on |%btn| button pressed" shim=IrRemote::onPressEvent group="micro:bit(v1)"
+    //% block="当红外遥控器按键|%btn|按下" shim=IrRemote::onPressEvent group="micro:bit(v1)"
     export function OnPressEvent(btn: RemoteButton, body: () => void): void {
         return;
     }
@@ -82,7 +82,7 @@ namespace Remote {
      *  @param pin describe parameter here, eg: IrPins.P5  
      */
     //% blockId=IrRemote_init 
-    //% block="connect ir receiver to %pin" shim=IrRemote::IrRemote_init group="micro:bit(v1)"
+    //% block="红外遥控器初始化引脚|%pin" shim=IrRemote::IrRemote_init group="micro:bit(v1)"
     export function IrRemote_init(pin: IrPins): void {
         return;
     }
@@ -110,7 +110,7 @@ function irCode(): number {
 
 //% weight=5
 //% group="micro:bit(v2)"
-//% blockId=IR_readv2 block="read IR key value"
+//% blockId=IR_readv2 block="红外接收的值"
 export function IR_readV2(): string {
     pins.setPull(DigitalPin.P1, PinPullMode.PullUp);
     let val = valuotokeyConversion();
@@ -119,7 +119,7 @@ export function IR_readV2(): string {
 
 //% weight=2
 //% group="micro:bit(v2)"
-//% blockId=IR_callbackUserv2 block="on IR received"
+//% blockId=IR_callbackUserv2 block="当接收到红外时运行"
 //% draggableParameters
 export function IR_callbackUserV2(cb: (message: string) => void) {
     pins.setPull(DigitalPin.P1, PinPullMode.PullUp);
