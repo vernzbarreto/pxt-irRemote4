@@ -138,11 +138,10 @@ function valuotokeyConversion(): string {
         case 0xf20d: str = '#'; break;
         case 0xe718: str = 'UP'; break;
         case 0xf708: str = 'LEFT'; break;
-        case 0xea15: str = 'OK'; break;
+        case 0xe31c: str = 'OK'; break;
         case 0xA55A: str = 'RIGHT'; break;
         case 0xe619: str = '0'; break;
         case 0xad52: str = 'DOWN'; break;
-        case 0xf20d: str = '-'; break;
         case 0xba45: str = '1'; break;
         case 0xb946: str = '2'; break;
         case 0xb847: str = '3'; break;
