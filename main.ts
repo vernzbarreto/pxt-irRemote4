@@ -7,48 +7,40 @@ load dependency
 
 
 enum RemoteButton {
-    //% block=A
-    A = 0x45,
-    //% block=B
-    B = 0x46,
-    //% block=C
-    C = 0x47,
-    //% block=D
-    D = 0x44,
+    //% block=*
+    A = 0x16,
+    //% block=#
+    B = 0x0D,
     //% block=UP
-    UP = 0x40,
-    //% block=+
-    Add = 0x43,
+    UP = 0x18,
     //% block=LEFT
-    Left = 0x07,
+    Left = 0x08,
     //% block=OK
-    Ok = 0x15,
+    Ok = 0x1C,
     //% block=RIGHT
-    Right = 0x09,
+    Right = 0x5A,
     //% block=DOWN
-    Down = 0x19,
-    //% block=-
-    EQ = 0x0d,
+    Down = 0x52,
     //% block=0
-    NUM0 = 0x16,
+    NUM0 = 0x19,
     //% block=1
-    NUM1 = 0x0c,
+    NUM1 = 0x45,
     //% block=2
-    NUM2 = 0x18,
+    NUM2 = 0x46,
     //% block=3
-    NUM3 = 0x5e,
+    NUM3 = 0x47,
     //% block=4
-    NUM4 = 0x8,
+    NUM4 = 0x44,
     //% block=5
-    NUM5 = 0x1c,
+    NUM5 = 0x40,
     //% block=6
-    NUM6 = 0x5a,
+    NUM6 = 0x43,
     //% block=7
-    NUM7 = 0x42,
+    NUM7 = 0x07,
     //% block=8
-    NUM8 = 0x52,
+    NUM8 = 0x15,
     //% block=9
-    NUM9 = 0x4A
+    NUM9 = 0x09
 };
 
  enum  IrPins{
@@ -142,27 +134,24 @@ function valuotokeyConversion(): string {
 	let str: string;
     // basic.showString("" + (irCode()))
     switch (irCode()) {
-        case 0xba45: str = 'A'; break;
-        case 0xb946: str = 'B'; break;
-        case 0xb847: str = 'C'; break;
-        case 0xbb44: str = 'D'; break;
-        case 0xbf40: str = 'UP'; break;
-        case 0xbc43: str = '+'; break;
-        case 0xf807: str = 'LEFT'; break;
+        case 0xe916: str = '*'; break;
+        case 0xf20d: str = '#'; break;
+        case 0xe718: str = 'UP'; break;
+        case 0xf708: str = 'LEFT'; break;
         case 0xea15: str = 'OK'; break;
-        case 0xf609: str = 'RIGHT'; break;
-        case 0xe916: str = '0'; break;
-        case 0xe619: str = 'DOWN'; break;
+        case 0xA55A: str = 'RIGHT'; break;
+        case 0xe619: str = '0'; break;
+        case 0xad52: str = 'DOWN'; break;
         case 0xf20d: str = '-'; break;
-        case 0xf30c: str = '1'; break;
-        case 0xe718: str = '2'; break;
-        case 0xa15e: str = '3'; break;
-        case 0xf708: str = '4'; break;
-        case 0xe31c: str = '5'; break;
-        case 0xa55a: str = '6'; break;
-        case 0xbd42: str = '7'; break;
-        case 0xad52: str = '8'; break;
-        case 0xb54a: str = '9'; break;
+        case 0xba45: str = '1'; break;
+        case 0xb946: str = '2'; break;
+        case 0xb847: str = '3'; break;
+        case 0xbb44: str = '4'; break;
+        case 0xbf40: str = '5'; break;
+        case 0xbc47: str = '6'; break;
+        case 0xf807: str = '7'; break;
+        case 0xea15: str = '8'; break;
+        case 0xf609: str = '9'; break;
         default: str = ''; break;
     }
     return str;
