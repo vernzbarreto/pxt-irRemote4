@@ -141,7 +141,7 @@ namespace Remote {
      */
     //% blockId=IrRemote_init 
     //% block="红外遥控器初始化引脚|%pin %mode" shim=IrRemote::IrRemote_init group="micro:bit(v1)"
-    export function IrRemote_init(pin: IrPins, REMOTE_MODE: mode): void {
+    export function IrRemote_init(pin: IrPins, mode: REMOTE_MODE): void {
         return;
     }
     
