@@ -17,7 +17,7 @@
         "RemoteIR.h",
         "TransmitterIR.cpp",
         "TransmitterIR.h",
-        "_locales/zh/remote-strings.json",
+
         "NecIR.cpp"
     ],
     "testFiles": [
