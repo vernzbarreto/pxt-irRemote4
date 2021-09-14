@@ -166,7 +166,7 @@ namespace IrRemote {
 	  uBit.serial.send("\r\n");
     if(EM_actions.find((EM_RemoteButton)buf[2]) == EM_actions.end()) return;
     now = tsb.read_ms();
-    if(now - lastact[(EM_RemoteButton)buf[2]] < 100) return;
+    if(now - EM_lastact[(EM_RemoteButton)buf[2]] < 100) return;
     EM_lastact[(EM_RemoteButton)buf[2]] = now;
     EM_cA(EM_actions[(EM_RemoteButton)buf[2]]); 
   }
@@ -187,6 +187,7 @@ namespace IrRemote {
         uBit.sleep(50);
       }
         onReceivable_EM();
+    }
   }
 	  
   /**
