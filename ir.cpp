@@ -140,7 +140,7 @@ namespace IrRemote {
   * button pushed.
   */
   //%
-  void onPressEvent_EM(EM_RemoteButton btn, EM_Action body) {
+  void onPressEvent_EM(EM_RemoteButton btn, Action body) {
     EM_actions[btn].push_back(body);
   }
 
@@ -198,7 +198,7 @@ namespace IrRemote {
     tsb.start(); //interrupt timer for debounce
     if (mode == 0) {
         create_fiber(monitorIR);
-    }elde if (mode == 1) {
+    }else if (mode == 1) {
        create_fiber(monitorIR_EM);
     }
   }
