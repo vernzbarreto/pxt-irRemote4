@@ -184,24 +184,6 @@ let state:number;
  /**
  * Read IR sensor value V2.
  */
-
-    /**
-     * button pushed.
-     */
-    //% blockId=onPressEvent_V2
-    //% block="当红外遥控器按键|%btn|按下" shim=IrRemote::onPressEvent_V2 group="micro:bit(v2)"
-    export function OnPressEvent_V2(btn: RemoteButton, body: () => void): void {
-        return;
-    }
-
-    /**
-     * button pushed.
-     */
-    //% blockId=onPressEvent_EM_V2
-    //% block="当红外遥控器按键|%btn|按下" shim=IrRemote::onPressEvent_EM_V2 group="micro:bit(v2)"
-    export function OnPressEvent_EM_V2(btn: EM_RemoteButton, body: () => void): void {
-        return;
-    }
 	
     /**
      * initialises local variables
