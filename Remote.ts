@@ -66,6 +66,28 @@ enum RemoteButton {
      P20= 30
    };
 
+enum  V2Pins{
+  P0=  2,
+  P1=  3,
+  P2=  4,
+ // P3=  4,
+ // P4=  5,
+  P5=  14,
+ // P6=  12,
+ // P7=  11,
+  P8=  10,
+  P9=  9,
+ // P10= 6,
+ // P11= 26,
+  P12= 12,
+ // P13= 23,
+  P14= 1,
+  //P15= 21,
+ // P16= 16,
+ // P19= 0,
+ // P20= 30
+};
+
 enum EM_RemoteButton {
     //% block=A
     EM_A = 0x45,
@@ -187,7 +209,7 @@ let state:number;
      */
     //% blockId=IrRemote_init_V2 
     //% block="红外遥控器初始化引脚|%pin %mode" shim=IrRemote::IrRemote_init_V2 group="micro:bit(v2)"
-    export function IrRemote_init_V2(pin: IrPins, mode: REMOTE_MODE): void {
+    export function IrRemote_init_V2(pin: V2Pins, mode: REMOTE_MODE): void {
         return;
     }
 	
