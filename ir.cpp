@@ -110,7 +110,10 @@ enum RemoteButton {
     Down = 0x52,
 };
 
-
+enum class MODE {
+    _Remote = 0,
+    EM_Remote = 1,
+};
 //% color=50 weight=19 icon="\uf1eb"
 //% block="IrRemote"
 namespace IrRemote { 
