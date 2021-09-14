@@ -28,6 +28,28 @@ enum class Pins{
   P20= 30
 };
 
+enum class V2Pins{
+  P0=  2,
+  P1=  3,
+  P2=  4,
+ // P3=  4,
+ // P4=  5,
+  P5=  14,
+ // P6=  12,
+ // P7=  11,
+  P8=  10,
+  P9=  9,
+ // P10= 6,
+ // P11= 26,
+  P12= 12,
+ // P13= 23,
+  P14= 1,
+  //P15= 21,
+ // P16= 16,
+ // P19= 0,
+ // P20= 30
+};
+
 enum class EM_RemoteButton {
       //% block=A
       A = 0x45,
@@ -195,6 +217,20 @@ namespace IrRemote {
   */
   //%
   void IrRemote_init(Pins pin, int mode){
+    rx = new ReceiverIR((PinName)pin);
+    tsb.start(); //interrupt timer for debounce
+    if (mode == 0) {
+        create_fiber(monitorIR);
+    }else if (mode == 1) {
+       create_fiber(monitorIR_EM);
+    }
+  }
+	
+  /**
+  * initialises local variablesssss
+  */
+  //%
+  void IrRemote_init(V2Pins pin, int mode){
     rx = new ReceiverIR((PinName)pin);
     tsb.start(); //interrupt timer for debounce
     if (mode == 0) {
