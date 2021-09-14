@@ -194,7 +194,7 @@ namespace IrRemote {
   * initialises local variablesssss
   */
   //%
-  void IrRemote_init(Pins pin, MODE mode){
+  void IrRemote_init(Pins pin, int mode){
     rx = new ReceiverIR((PinName)pin);
     tsb.start(); //interrupt timer for debounce
     if (mode == 0) {
