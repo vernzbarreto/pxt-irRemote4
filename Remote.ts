@@ -140,8 +140,8 @@ namespace Remote {
      *  @param pin describe parameter here, eg: IrPins.P5  
      */
     //% blockId=IrRemote_init 
-    //% block="红外遥控器初始化引脚|%pin" shim=IrRemote::IrRemote_init group="micro:bit(v1)"
-    export function IrRemote_init(pin: IrPins, REMOTE_MODE mode): void {
+    //% block="红外遥控器初始化引脚|%pin %mode" shim=IrRemote::IrRemote_init group="micro:bit(v1)"
+    export function IrRemote_init(pin: IrPins, REMOTE_MODE: mode): void {
         return;
     }
     
