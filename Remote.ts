@@ -111,10 +111,12 @@ enum EM_RemoteButton {
     //% block=9
     EM_NUM9 = 0x4a
 };
+
 enum REMOTE_MODE {
     Remote = 0,
     EM_Remote = 1,
 };
+
 //% color="#EE6A50" weight=10 icon="\uf013"
 namespace Remote {
     /**
@@ -161,6 +163,34 @@ let state:number;
  * Read IR sensor value V2.
  */
 
+    /**
+     * button pushed.
+     */
+    //% blockId=onPressEvent_V2
+    //% block="当红外遥控器按键|%btn|按下" shim=IrRemote::onPressEvent_V2 group="micro:bit(v2)"
+    export function OnPressEvent_V2(btn: RemoteButton, body: () => void): void {
+        return;
+    }
+
+    /**
+     * button pushed.
+     */
+    //% blockId=onPressEvent_EM_V2
+    //% block="当红外遥控器按键|%btn|按下" shim=IrRemote::onPressEvent_EM_V2 group="micro:bit(v2)"
+    export function OnPressEvent_EM_V2(btn: EM_RemoteButton, body: () => void): void {
+        return;
+    }
+	
+    /**
+     * initialises local variables
+     *  @param pin describe parameter here, eg: IrPins.P5  
+     */
+    //% blockId=IrRemote_init_V2 
+    //% block="红外遥控器初始化引脚|%pin %mode" shim=IrRemote::IrRemote_init_V2 group="micro:bit(v2)"
+    export function IrRemote_init_V2(pin: IrPins, mode: REMOTE_MODE): void {
+        return;
+    }
+	
 //% advanced=true shim=maqueenIRV2::irCode
 function irCode(): number {
     return 0;
