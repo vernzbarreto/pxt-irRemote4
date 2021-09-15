@@ -140,7 +140,7 @@ namespace Remote {
      * button pushed.
      */
     //% blockId=onPressEvent
-    //% block="当红外遥控器按键|%btn|按下" shim=IrRemote::onPressEvent
+    //% block="当普通红外遥控器按键|%btn|按下" shim=IrRemote::onPressEvent
     export function OnPressEvent(btn: RemoteButton, body: () => void): void {
         return;
     }
@@ -149,7 +149,7 @@ namespace Remote {
      * button pushed.
      */
     //% blockId=onPressEvent_EM
-    //% block="当EM红外遥控器按键|%btn|按下" shim=IrRemote::onPressEvent_EM
+    //% block="当Eamkefun红外遥控器按键|%btn|按下" shim=IrRemote::onPressEvent_EM
     export function OnPressEvent_EM(btn: EM_RemoteButton, body: () => void): void {
         return;
     }
