@@ -120,7 +120,7 @@ namespace EM_IR {
      */
     //% weight=70
     //% blockId=IrRemote_init 
-    //% block="遥控器初始化引脚|%pin" 
+    //% block="ir remote init port | %pin" 
     export function IrRemote_init(pin: IrPins): void {
         irPin = pin;
         return;
@@ -138,7 +138,7 @@ namespace EM_IR {
      * @param e describe parameter here
      */
     //% weight=60
-    //% block="红外接收的值"
+    //% block="read IR key value"
     export function EM_IR_read(): number {
         pins.setPull(getPin(), PinPullMode.PullUp)
         return valuotokeyConversion();
@@ -150,7 +150,7 @@ namespace EM_IR {
      */
     //% weight=50
     //% blockId=onPressEvent
-    //% block="当接收到红外值时运行"
+    //% block="on IR received"
     //% draggableParameters
     export function OnPressEvent(cb: (message: number) => void) {
         pins.setPull(getPin(), PinPullMode.PullUp)
