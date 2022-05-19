@@ -1,28 +1,25 @@
 {
-    "name": "Remote",
-    "version": "1.0.0",
-    "description": "ir remote",
-    "license": "MIT",
+    "name": "ir",
+    "version": "0.0.1",
+    "description": "Emakefun irRmote",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "radio": "*",
+        "microphone": "*"
     },
     "files": [
         "README.md",
-        "Remote.ts",
-        "shims.d.ts",
-        "enums.d.ts",
-        "ir.cpp",
+        "main.blocks",
         "ReceiverIR.cpp",
-        "ReceiverIR.h",
-        "RemoteIR.h",
-        "TransmitterIR.cpp",
-        "TransmitterIR.h",
-
-        "NecIR.cpp"
+        "ir.ts",
+        "_locales/zh-cn/ir-strings.json"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
-    "preferredEditor": "tsprj"
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
 }

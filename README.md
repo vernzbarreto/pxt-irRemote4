@@ -1,55 +1,31 @@
-# MagicBit
-[中文版](README_zh.md)
 
-[Emakefun](www.emakefun.com) magicbit expansion board for micro:bit
-![image](icon.png)
+> Open this page at [https://.github.io//](https://.github.io//)
 
-## Feature
+## Use as Extension
 
-- Designed for robotic projects over microbit
-- On board battery source with usb charger
-- Drive 8x servos and 4x DC motors and the same time (with 3.7v battery source to VM)
-- Drive 2x Micro Stepper Motors
-- On board buzzer
-- On board 4x RGB Neo Pixels
-- On board ir receiver
-- 2xPH2.0-4Pin for i2c port and rgbultrasonic
-- 4xPH2.0-2Pin for DC motors
+This repository can be added as an **extension** in MakeCode.
 
-## Hardware Preview
-### Front
-![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_hardware_front.png)
+* open []()
+* click on **New Project**
+* click on **Extensions** under the gearwheel menu
+* search for **https://github.com/** and import
 
-### Back
-![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_hardware_back.png)
+## Edit this project ![Build status badge](https://github.com//workflows/MakeCode/badge.svg)
 
-## Blocks Preview
-### magicbit blocks
-![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_block.png)
+To edit this repository in MakeCode.
 
-### on board rgb blocks
-add block link  https://github.com/microsoft/pxt-neopixel
-![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/rgb_block.png)
-![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/rgb_more_block.png)
+* open []()
+* click on **Import** then click on **Import URL**
+* paste **https://github.com/** and click import
 
-### ir blocks
-![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/ir_block.png)
+## Blocks preview
 
-## License
-MIT
+This image shows the blocks code from the last commit in master.
+This image may take a few minutes to refresh.
 
-## Supported targets
+![A rendered view of the blocks](https://github.com//raw/master/.github/makecode/blocks.png)
 
-* for PXT/microbit
-(The metadata above is needed for package search.)
+#### Metadata (used for search, rendering)
 
-```package
-magicbit=github:emakefun/pxt-magicbit
-```
-
-# Please Contact Us
-Technical support email: support@emakefun.com</br>
-Sales email: ken@emakefun.com</br>
-The latest information download address:https://github.com/emakefun/pxt-magicbit  </br>
-
-
+* for PXT/
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
